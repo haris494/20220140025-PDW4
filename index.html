@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Meeting Notes</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Style tambahan untuk memperbaiki tampilan */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c91d1d;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .content {
+    text-align: center;
+  }
+  .meeting-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .agenda {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Let's Talk Business!</h1>
+  </div>
+  <div class="content">
+    <img src="coffee-conversation-party-invitation-design-template-777002f8a62fbcff3b8dfddc9e56af9c_screen.jpg" alt="Business Meeting" class="meeting-image">
+    <p class="txt-waktu" id="hasil"></p>
+    <div class="agenda">
+      <h2>Agenda:</h2>
+      <ul>
+        <li>Complete Documentation</li>
+        <li>Team Updates</li>
+        <li>Pre-launch Checklist</li>
+      </ul>
+    </div>
+    <button onclick="show()">Start Meeting</button>
+  </div>
+</div>
+<script>
+  // JavaScript code to display the current date and time
+  let tanggal = new Date();
+  document.getElementById("hasil").innerHTML = tanggal.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true, timeZone: 'UTC' });
+</script>
+<script src="main.js"></script>
+</body>
+</html>
